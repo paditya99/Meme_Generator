@@ -45,9 +45,7 @@ box-shadow: 0px 5.35234px 13.3809px rgba(0, 0, 0, 0.1);
     font-size: 30px;
     font-weight: 500;
     margin-right: auto;
-    
     display: flex;
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -58,21 +56,28 @@ box-shadow: 0px 5.35234px 13.3809px rgba(0, 0, 0, 0.1);
   height: 100%;
   margin-right: 5px;
   
-}
+  }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   .logoname{
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     margin-right: auto;
-    
     display: flex;
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.memelogo{
+  width: auto;
+  padding-top: 2px;
+  padding-left: 10px;
+  height: 80%;
+  margin-right: 5px;
+  
+  }
 }
+
 .card{
     margin-left: 200px;
     width: 1000px;
