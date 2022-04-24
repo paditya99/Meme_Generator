@@ -15,10 +15,10 @@ box-shadow: 0px 5.35234px 13.3809px rgba(0, 0, 0, 0.1);
 
 
 .memelogo{
-    width: 150px;
-    padding-top: 2px;
+    width: auto;
+    padding: 2px;
     padding-left: 20px;
-    height: 100%;
+    height: 85%;
     margin-right: 5px;
     
 }
@@ -31,6 +31,48 @@ box-shadow: 0px 5.35234px 13.3809px rgba(0, 0, 0, 0.1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .memelogo{
+    width: auto;
+    padding: 2px;
+    padding-left: 20px;
+    height: 70%;
+    margin-right: 5px;
+    
+}
+  .logoname{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: auto;
+    
+    display: flex;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.memelogo{
+  width: 100px;
+  padding-top: 2px;
+  padding-left: 10px;
+  height: 100%;
+  margin-right: 5px;
+  
+}
+}
+
+@media only screen and (min-width: 600px) {
+  .logoname{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: auto;
+    
+    display: flex;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
 .card{
     margin-left: 200px;
     width: 1000px;
@@ -46,6 +88,9 @@ box-shadow: 0px 5.35234px 13.3809px rgba(0, 0, 0, 0.1);
 .main{
     background-color: rgb(42, 46, 59);
     padding: 36px;
+}
+main.light{
+  background-color: rgb(249, 191, 218);
 }
 main.dark{
   background-color: #333333;
@@ -78,6 +123,19 @@ height: 450px;
 border-radius: 20px;
 
 }
+
+@media only screen and (max-width: 600px) {
+  .meme-img{
+
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    
+    }
+
+
+}
+
 .memetext{
     
     position: absolute;
@@ -119,6 +177,19 @@ border-radius: 20px;
     width: 60px;
     height: 34px;
     right: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+   
+    .switch {
+      position: absolute;
+      
+      width: 40px;
+      height: 24px;
+      right: 20px;
+    }
+    
+   
+    
   }
   
   .switch input { 
@@ -164,7 +235,35 @@ border-radius: 20px;
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
+  @media only screen and (max-width: 600px) {
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(16px);
+  }
+}
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
@@ -172,4 +271,54 @@ border-radius: 20px;
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .foot{
+    background-color: rgb(161, 161, 161);
+    height: 60px;
+    width: 100%;
+  }
+
+  .cover{
+    background-color: rgb(172, 156, 163);
+    height: auto;
+    width: auto;
+  }
+
+  .downloadbtn{
+    background-color: rgb(2, 159, 2);
+    color: #fff;
+    border-radius: 50px;
+    width: 17%;
+    height: 50px;
+    padding: 10px;
+    font-size: medium;
+    
+
+  }
+
+  .connect{
+    background-color: #000000;
+    color: #fff;
+    padding: 5px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .downloadbtn{
+      background-color: rgb(2, 159, 2);
+      color: #fff;
+      border-radius: 30px;
+      width: 38%;
+      height: 50px;
+      padding: 6px;
+      font-size: small;
+      font-weight: 450;
+      
+      
+  
+    }
+
   }

@@ -2,8 +2,7 @@ import React from "react";
 import '../Components/Style.css'
 import { Form } from "react-bootstrap";
 import '../ind'
-import $ from 'jquery'
-import html2canvas from 'html2canvas';
+import domtoimage from "dom-to-image";
 
 
 function MemeComponent(props){
@@ -32,6 +31,9 @@ function MemeComponent(props){
     fetch("https://api.imgflip.com/get_memes")
     .then(res=>res.json())
     .then(data=>setallmemes(data.data.memes))
+    .catch((err)=>{
+      alert("Error! No Internet connection")
+    })
   },[])
 
   
@@ -56,68 +58,37 @@ function MemeComponent(props){
       }))
 
   }
-//   function PrintDiv(btni){
-//     html2canvas((btni),{
-//         onrendered: function(canvas){
-//             var myimage=canvas.toDataURL();
-//             downloadURI(myimage,"abc.png");
-//         }
-//     });
-// }
-
-// function downloadURI(uri,name){
-//     var link=document.createElement("a");
-//     link.download=name;
-//     document.body.appendChild(link);
-//     link.click();
-// }
-
-
-// var element = $("#html-content-holder"); 
-          
-//  // Global variable
-//  var getCanvas; 
-// $("#preview").on('click', function() {
-//   html2canvas(element, {
-//       onrendered: function(canvas) {
-//           $("#previewImage").append(canvas);
-//           getCanvas = canvas;
-//       }
-//   });
-// });
-
-//  $("#btni").on('click', function() {
-//      console.log("btao");
-//     var imgageData = getCanvas.toDataURL("image/png");
   
-//     // Now browser starts downloading 
-//     // it instead of just showing it
-//     var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-  
-//     $("#btni").attr("download", "GeeksForGeeks.png").attr("href", newData);
-// });
-const handleDownloadImage = async () => {
-  const element = printRef.current;
-  const canvas = await html2canvas(element);
 
-  const data = canvas.toDataURL('image/jpg');
-  const link = document.createElement('a');
+const shot=()=>{
+  var node=document.getElementById('load');
+    
+    domtoimage.toPng(node)
+    
+    // .then(function (dataUrl) {
+    //     var img = new Image();
+    //     img.src = dataUrl;
+    //     document.body.appendChild(img);
+        
+    // })
+    .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    });
+    domtoimage.toJpeg(document.getElementById('load'), { quality: 0.95 })
+    .then(function (dataUrl) {
+     
+        var link = document.createElement('a');
+        link.download = 'image.jpeg';
+        link.href = dataUrl;
+        link.click();
+    });
+}
 
-  if (typeof link.download === 'string') {
-    link.href = data;
-    link.download = 'image.jpg';
 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  } else {
-    window.open(data);
-  }
-};
 
         return(
 
-          <main className={props.darkmode ? "dark" : ""}>
+          <main className={props.darkmode ? "dark" : "light"}>
             <form className="form">
    <div className="row">
     <div className="col">
@@ -133,18 +104,37 @@ const handleDownloadImage = async () => {
  <br></br>
  <br></br>
 
-          <div className="meme" ref={printRef}>
+          <div className="meme" id="load" ref={printRef}>
          
               <img src={memeimg.randomimg} className="meme-img"  ></img>
               <h2 className="memetext top">{memeimg.toptext}</h2>
               <h2 className="memetext bottom">{memeimg.bottomtext}</h2>
             
           </div>
-          <button type="button" onClick={handleDownloadImage}>
+          <br></br>
+          <button className="downloadbtn"  type="button" onClick={shot}>
         Download as Image
       </button>
+         <br></br>
+         <br></br>
+         <br></br>
+          <div className="connect">
+            Connect with me:
+          </div>
+
+          <div className="foot">
          
           
+          <div className="cover">
+            
+          <a href="https://www.facebook.com/profile.php?id=100005213804787" class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/in/aditya-pathak-7ab7b2173/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/aditya__pk/" class="fa fa-instagram"></a>
+          </div>
+          </div>
+         
+
+
           </main>
           
 
