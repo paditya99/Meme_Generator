@@ -60,6 +60,6 @@ The Meme Generator Website not only serves as a lighthearted source of fun and c
 
 ## Screenshot
 
-![Screenshot (181)](https://github.com/paditya99/Meme_generator/assets/43406934/e03282d7-7471-4749-8d9d-c32ba79e3190)
+![Screenshot (181)](https://github.com/paditya99/Meme_generator/assets/43406934/c9d5f6d4-e3ee-480a-99a5-6a01988c5140)
 
-![Screenshot (182)](https://github.com/paditya99/Meme_generator/assets/43406934/d2c3eb18-57f6-473c-a51e-ef2f842e7912)
+![Screenshot (182)](https://github.com/paditya99/Meme_generator/assets/43406934/7bc46277-4b6b-4418-91cd-13fa4bd09c8e)
