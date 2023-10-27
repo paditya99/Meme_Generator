@@ -1,60 +1,43 @@
-# E-Commerce Website
+# Meme Generator Website
 
-The **MERN E-Commerce Website** is a modern and robust online shopping platform that provides a seamless and secure shopping experience for users. Built using the MERN (MongoDB, Express, React, Node.js) stack, this project aims to clone the way people buy and sell products online.
+The **Meme Generator Website** is a fun and interactive web application created using HTML, CSS, JavaScript, and React.js. Its primary purpose is to provide users with a quick and enjoyable way to generate memes by overlaying custom text on random images fetched from an API. This project combines humor, user interactivity, and a touch of creativity, making it an ideal platform for generating and sharing personalized memes.
 
 ## Main Features
 
-- **User Authentication and Registration:** Users can create accounts, log in, and manage their profiles securely.
+- **Random Image Fetching:** The website fetches random images from an API to serve as the background for your memes.
 
-- **Product Catalog:** A vast product catalog featuring a wide variety of items, organized into categories for easy navigation.
+- **Text Input Fields:** Users can enter their own text in two input fields, allowing for both a top and bottom caption.
 
-- **Search Functionality:** Users can search for products using keywords.
+- **Text Overlay:** The entered text is overlaid onto the fetched image in a meme-style format, giving it a humorous touch.
 
-- **Filter Products:** Users can filter the products based on the categories, price and rated stars.
+- **Download Meme:** Users have the option to download the generated meme as an image file, making it easy to share with friends and on social media.
 
-- **Shopping Cart:** An intuitive shopping cart that allows users to add, modify, and remove products before making a purchase.
-
-- **Checkout Process:** A streamlined checkout process with multiple payment options, making it easy for users to complete their orders.
-
-- **User Profiles:** User profiles that store order history, shipping details, and other personalized information.
-
-- **Help Section:** Users can send their messages to the admin in the help section via contact form.
-
-<!-- **Admin Panel:** An admin panel for product management, order tracking, and user management. -->
-
-<!-- **Payment Integration:** Seamless integration with popular payment gateways such as PayPal and Stripe, ensuring secure transactions. -->
-
-- **Responsive Design:** The website offers a responsive design that adapts to various devices, providing an optimal user experience on both mobile and desktop.
+- **Light/Dark Theme:** The website offers both light and dark theme options, providing a comfortable user experience in various lighting conditions.
 
 ## Goals and Purpose
 
-The primary goals and purposes of the MERN E-Commerce Website project are as follows:
+The Meme Generator Website was developed with the following goals and purposes in mind:
 
-1. **Simplify Online Shopping:** Make online shopping easy and convenient for users by providing a user-friendly interface and streamlined processes.
+1. **Entertainment:** To provide users with a source of entertainment and amusement by allowing them to create and share memes easily.
 
-2. **Enhance User Security:** Prioritize user security by implementing robust authentication mechanisms and secure payment processing.
+2. **Creativity:** Encourage users to express their creativity and humor by generating custom memes with unique captions.
 
-3. **Scalability:** Develop the project with scalability in mind, making it easy to add new features and accommodate a growing user base.
+3. **User Interaction:** Foster user engagement by enabling them to actively participate in meme creation and personalization.
 
-4. **Learn and Showcase MERN Skills:** Serve as a demonstration of the developer's skills in MERN stack technologies, which can be a valuable addition to a portfolio.
+4. **Learning:** Serve as a practical project for learning and demonstrating web development skills, particularly in HTML, CSS, JavaScript, and React.js.
 
-5. **Real-world Application:** Create a real-world application that can be used as a foundation for building an actual e-commerce business.
+5. **Sharing Laughter:** Facilitate the sharing of humor and laughter with friends and online communities through the memes created on the website.
 
-The MERN E-Commerce Website project strives to provide a complete and polished online shopping experience that meets the needs of buyers, while also serving as a practical learning resource for developers interested in MERN stack development.
-
+The Meme Generator Website not only serves as a lighthearted source of fun and creativity but also demonstrates the developer's proficiency in web development technologies. It allows users to explore the world of memes and share their humor with others.
 
 ## Technologies used
 
 - Frontend:
+  - HTML
+  - CSS
+  - Javascript
   - React components
   - React Hooks
-  - Redux for state management
-  - React Router for routing
-  - Material-UI for UI components
-- Backend:
-  - Node.js with Express.js
-  - MongoDB for database
-  - JSON Web Tokens (JWT) for authentication
 
 ## Getting Started
 
@@ -63,27 +46,20 @@ The MERN E-Commerce Website project strives to provide a complete and polished o
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/paditya99/Ecommerce_website.git
-   cd Ecommerce_website
+   git clone https://github.com/paditya99/Meme_generator.git
+   cd Meme_generator
    ```
 
-2. Run Backend:
+2. Run Frontend:
 
   ```bash
-  $ npm install
-  $ npm run dev
-  ```
-
-3. Run Frontend:
-
-  ```bash
-  # open new terminal
   $ cd frontend
   $ npm install
   $ npm start
   ```
 
-## Screenshots
+## Screenshot
 
-### Home Page
-![home page](https://github.com/paditya99/Ecommerce_website/assets/43406934/680e9d37-a306-4998-bb80-0efd7b12634b)
+![Screenshot (181)](https://github.com/paditya99/Meme_generator/assets/43406934/e03282d7-7471-4749-8d9d-c32ba79e3190)
+
+![Screenshot (182)](https://github.com/paditya99/Meme_generator/assets/43406934/d2c3eb18-57f6-473c-a51e-ef2f842e7912)
